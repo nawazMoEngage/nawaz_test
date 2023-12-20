@@ -6,15 +6,15 @@
   <title>Web SDK Test</title>
 </head>
 <body>
-  <button id="generate_device">Generate device type</button>
+  <!--<button id="generate_device">Generate device type</button>-->
   <p>
     <label id="device_type"></label>
   </p>
   
   <script>
-    document.getElementById('generate_device').addEventListener('click', function() {
+   // document.getElementById('generate_device').addEventListener('click', function() {
       document.getElementById('device_type').textContent = deviceType();
-    })
+   // })
     function deviceType() {
       const userAgent = navigator.userAgent.toLowerCase();
       const screenWidth =
